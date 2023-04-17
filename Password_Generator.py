@@ -34,8 +34,16 @@ def password_gen():
         random_stri = random.choices(stri, k = question_1//2)
         join_pns = random_punc + random_stri
         random3 = random.choices(join_pns, k= question_1)
-        
         password ="".join(random3)
+        print(f"Your password is: {password}")
+    elif question_2 == 4:
+        punc = string.punctuation
+        num = string.digits
+        random_punc = random.choices(punc, k = question_1//2)
+        random_num = random.choices(num, k = question_1//2)
+        join_pnn = random_punc + random_num
+        random4 = random.choices(join_pnn, k= question_1)
+        password ="".join(random4)
         print(f"Your password is: {password}")
 
         
