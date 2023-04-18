@@ -10,7 +10,7 @@ def user_option():
 > """))
        
     else:
-        print("Please choose a password length with 8 characters or more")
+        print("Password length should be 8 characters or more")
         user_option()
 
 user_option()
