@@ -1,7 +1,3 @@
-
-
-
-
 def user_option():
     global question_2, question_1
     question_1 = int(input("Length of password: "))
