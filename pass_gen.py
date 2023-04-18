@@ -2,12 +2,9 @@ import random
 import string
 from ask_user import *
 
-
-
 def password_gen():
    
- 
-    if question_2 == 1:
+   if question_2 == 1:
         gen1 = string.ascii_letters
         random1 = random(gen1, k= question_1)
         password = "".join(random1)
