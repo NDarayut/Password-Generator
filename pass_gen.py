@@ -13,7 +13,7 @@ def password_gen():
         gen2 = string.hexdigits
         random2 = random.choices(gen2, k= question_1)
         password = "".join(random2)
-        print(f"YOur password is: {password}")
+        print(f"Your password is: {password}")
     elif question_2 == 3:
         punc = string.punctuation
         stri = string.ascii_letters
