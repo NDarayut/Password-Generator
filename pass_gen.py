@@ -1,7 +1,7 @@
 import random
 import string
 from ask_user import *
-
+question_1= int(question_1)
 def password_gen():
    
    if question_2 == 1:

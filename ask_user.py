@@ -1,7 +1,7 @@
 def user_option():
     global question_2, question_1
     question_1 = input("Length of password: ")
-    if question_1 >= 8:
+    if question_1 >= "8" and question_1.isnumeric():
         question_2 = int(input("""1)Letters exclusive
 2)Letters and numbers
 3)Letters and punctuation
