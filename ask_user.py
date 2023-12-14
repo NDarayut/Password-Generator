@@ -1,6 +1,6 @@
 def user_option():
     global question_2, question_1
-    question_1 = int(input("Length of password: "))
+    question_1 = input("Length of password: ")
     if question_1 >= 8:
         question_2 = int(input("""1)Letters exclusive
 2)Letters and numbers
