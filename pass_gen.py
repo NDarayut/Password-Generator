@@ -1,6 +1,7 @@
 import random
 import string
 import os
+import sqlite3
 
 
 
@@ -39,6 +40,7 @@ def user_option():
 
 
 def password_gen():
+   global password
    question_2=user_option2()
    if question_2.isnumeric():
        question_2=int(question_2)
@@ -84,12 +86,24 @@ def password_gen():
                print(f"Your password is: {password}")
        else:
            print("Please enter the appropriate integer!")
-           user_option2()
+
            password_gen()
    else:
         print("Please enter an integer!")
-        user_option2()
+
         password_gen()
+
+def dbconnection():
+    conn = sqlite3.connect('password.db')
+    """ conn.execute('''CREATE TABLE PasswordBase (
+                 ID INT PRIMARY KEY NOT NULL,
+                 Pass TEXT NOT NULL
+                 
+    );''')"""
+    conn.execute("""INSERT INTO PasswordBase (Pass)
+                 VALUES(?)""",password)
+    conn.commit()
+    conn.close()
 
         
        
