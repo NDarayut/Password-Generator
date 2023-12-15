@@ -1,2 +1,2 @@
 # Password-Generator  
-Library used: String and Random
+Library used: String, Random and OS
