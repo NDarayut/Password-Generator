@@ -1,9 +1,29 @@
 import random
 import string
-from ask_user import *
-question_1= int(question_1)
+import os
+
+def user_option2():
+    global question_2
+    question_2 = int(input("""1)Letters exclusive
+2)Letters and numbers
+3)Letters and punctuation
+4)Numbers and punctuation
+5)Letter, numbers and punctuation 
+> """))
+        
+def user_option():
+    global question_1
+    question_1 = input("Length of password: ")
+    if question_1 >= "8" and question_1.isnumeric():
+        question_1=int(question_1)
+        os.system('cls')
+        user_option2()
+       
+    else:
+        print("Password length should be 8 characters or more")
+        user_option()
+
 def password_gen():
-   
    if question_2 == 1:
         gen1 = string.ascii_letters
         random1 = random.choices(gen1, k= question_1)
@@ -43,9 +63,9 @@ def password_gen():
         random5 = random.choices(join_pnn, k= question_1)
         password ="".join(random5)
         print(f"Your password is: {password}")
-
-
-
+   else:
+        print("Please enter the appropriate integer!")
+       
 
 
 

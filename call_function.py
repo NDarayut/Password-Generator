@@ -1,3 +1,3 @@
-from pass_gen import password_gen
+from pass_gen import *
 
-password_gen()
+
