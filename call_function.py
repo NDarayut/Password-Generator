@@ -7,17 +7,17 @@ from tkinter import ttk
 def checkbox_change():
     selected_option = []
     if letters.get():
-        selected_option.append("a")
+        selected_option.append(1)
     if numbers.get():
-        selected_option.append("b")
+        selected_option.append(2)
     if symbols.get():
-        selected_option.append("c")
+        selected_option.append(3)
     return selected_option
 
 def submit():
     selected_option = checkbox_change()
     password_length = length_var.get()
-    
+
 
 window = tk.Tk()
 window.title("Password Generator")
