@@ -2,6 +2,7 @@ import random
 import string
 import os
 
+
 def user_option2():
 
     question_2 = input("""\t\t\t  1)Letters exclusive
@@ -36,9 +37,10 @@ def user_option():
         user_option()
 
 
-def password_gen():
+
+def password_gen(option, length):
    global password
-   question_2=user_option2()
+   question_2 = user_option2()
    if question_2.isnumeric():
        question_2=int(question_2)
        if question_2 >0 and question_2 < 6:
