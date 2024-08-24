@@ -3,20 +3,29 @@ import os
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
+import random
+
+options = {
+    1 : string.ascii_letters,
+    2 : str(random.randint(0, 9)),
+    3: string.punctuation
+}
 
 def checkbox_change():
-    selected_option = []
+    selected_options = [False, False, False]
     if letters.get():
-        selected_option.append(1)
+        selected_options[0] = True
     if numbers.get():
-        selected_option.append(2)
+        selected_options[1] = True
     if symbols.get():
-        selected_option.append(3)
-    return selected_option
+        selected_options[2] = True
+    return selected_options
 
 def submit():
-    selected_option = checkbox_change()
+    selected_options = checkbox_change()
     password_length = length_var.get()
+    
+
 
 
 window = tk.Tk()
