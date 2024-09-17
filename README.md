@@ -14,9 +14,11 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 - Python 3.x installed on your machine  
 - Tkinter (usually included in the standard Python distribution but you can install it again using the requirements.txt)
 ### Steps  
-1. Clone the repository:
+1. Clone the repository:  
 ```git clone https://github.com/NDarayut/Password-Generator.git```
-2. Run the python script:
+2. Install dependencies:
+```pip install -r requirements.txt```  
+3. Run the python script:  
 ```python user_interface.py```
 ## Usage  
 1. Run the script, and the Tkinter window will appear with three checkboxes labeled Alphabets, Numbers, and Symbols.  
