@@ -1,8 +1,7 @@
 from generator import generate_password
 import tkinter as tk
-from tkinter import *
+from tkinter import Checkbutton, Label, W
 from tkinter import ttk
-import random
 from tkinter import messagebox
 
 
