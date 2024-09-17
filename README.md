@@ -16,7 +16,7 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 ### Steps  
 1. Clone the repository:  
 ```git clone https://github.com/NDarayut/Password-Generator.git```
-2. Install dependencies:
+2. Install dependencies:  
 ```pip install -r requirements.txt```  
 3. Run the python script:  
 ```python user_interface.py```
