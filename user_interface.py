@@ -38,12 +38,13 @@ def submit():
     User can simply re-generate the password again by clicking on the "Generate" button.
 
     """
-    select_letters, select_numbers, select_symbols = checkbox_change()
+    select_letters, select_numbers, select_symbols = checkbox_change() # Stores checkbox boolean into a variable
     password_length = length_var.get() # Get length from tkinter object
 
+    # Call function from generator.py to generate the password
     password = generate_password(password_length, include_letters=select_letters, include_numbers=select_numbers,
                       include_symbols=select_symbols)
-    result.config(text=password)
+    result.config(text=password) # display generated password in result display
 
     copy_result.grid(row=7, column=0, padx=10, pady=10, sticky="ew") # display the copy button
 
@@ -62,6 +63,7 @@ def copy_result():
 
     messagebox.showinfo("Copied", "Text copied to clipboard!")
 
+# Create window object
 window = tk.Tk()
 window.title("Password Generator")
 
@@ -76,7 +78,7 @@ Checkbutton(window, text='Symbols', variable=symbols, command=checkbox_change).g
 # password length
 label = Label(window, text="Length of password")
 label.grid(row=3, column=0)
-length_var = tk.IntVar(value=8)
+length_var = tk.IntVar(value=8) # Initial value is set to 8
 length = ttk.Spinbox(window, from_=8, to_=50, textvariable=length_var, wrap=True)
 length.grid(row=4, column=0, padx=10, pady=10, sticky="ew")
 
