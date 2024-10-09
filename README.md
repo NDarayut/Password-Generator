@@ -1,6 +1,6 @@
 # Password Generator with Tkinter  
 This is a simple Python application that generates passwords based on user preferences. 
-The application uses the Tkinter library for the graphical user interface (GUI) 
+The application uses Tkinter library for graphical user interface (GUI) 
 and allows users to select the types of characters (Alphabets, Numbers, Symbols) they want to include in the generated password.  
 ## Features  
 - **User Interface**: A Tkinter-based GUI with checkboxes for selecting:  
@@ -27,4 +27,6 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 4. Click the "Generate Password" button to create a password based on your selections.  
 5. Click the "Copy" button to copy the generated password to the clipboard.  
 6. Paste the copied password wherever necessary.  
+## Demo  
 
+![Demo](https://github.com/user-attachments/assets/db67047f-a869-47ac-8997-fa72c0f67b5e)
