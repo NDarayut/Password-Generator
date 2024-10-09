@@ -12,7 +12,7 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 ## Getting Started  
 ### Prerequisites  
 - Python 3.x installed on your machine  
-- Tkinter (usually included in the standard Python distribution but you can install it again using the requirements.txt)
+- Tkinter (usually included in the standard Python distribution but you can install it again using requirements.txt)
 ### Steps  
 1. Clone the repository:  
 ```git clone https://github.com/NDarayut/Password-Generator.git```
