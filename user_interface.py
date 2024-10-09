@@ -40,6 +40,12 @@ def submit():
     """
     select_letters, select_numbers, select_symbols = checkbox_change() # Stores checkbox boolean into a variable
     password_length = length_var.get() # Get length from tkinter object
+    print(password_length)
+    print(type(password_length))
+
+    if password_length < 8 or password_length > 50:
+        messagebox.showerror("Input Error", "Length out of range. Must be within 8-50")
+        return
 
     # Call function from generator.py to generate the password
     password = generate_password(password_length, include_letters=select_letters, include_numbers=select_numbers,
@@ -63,6 +69,20 @@ def copy_result():
 
     messagebox.showinfo("Copied", "Text copied to clipboard!")
 
+def validate_length(value):
+    """
+    Function to check the length that user input in the spinbox. Range: 8-50
+    """
+    if value == "":
+        return True
+    try:
+        # Convert value to an integer and check if it's in the allowed range
+        val = int(value)
+        return val > 0
+    except ValueError:
+        # If conversion fails, return False (invalid input)
+        return False
+
 # Create window object
 window = tk.Tk()
 window.title("Password Generator")
@@ -76,10 +96,13 @@ symbols = tk.BooleanVar()
 Checkbutton(window, text='Symbols', variable=symbols, command=checkbox_change).grid(row=2, sticky=W)
 
 # password length
+# Create a validation command
+vcmd = window.register(validate_length)
+
 label = Label(window, text="Length of password")
 label.grid(row=3, column=0)
 length_var = tk.IntVar(value=8) # Initial value is set to 8
-length = ttk.Spinbox(window, from_=8, to_=50, textvariable=length_var, wrap=True)
+length = ttk.Spinbox(window, from_=8, to_=50, textvariable=length_var, wrap=True, validate="all", validatecommand=(vcmd, '%P'))
 length.grid(row=4, column=0, padx=10, pady=10, sticky="ew")
 
 # generate submit button
