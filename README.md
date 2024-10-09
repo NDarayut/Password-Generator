@@ -26,7 +26,9 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 3. Set the desired length of the password.  
 4. Click the "Generate Password" button to create a password based on your selections.  
 5. Click the "Copy" button to copy the generated password to the clipboard.  
-6. Paste the copied password wherever necessary.  
+6. Paste the copied password wherever necessary.
+## Window Application  
+User can run the application in their machine with the executable program provided in [dist folder]()
 ## Demo  
 
 ![Demo](https://github.com/user-attachments/assets/db67047f-a869-47ac-8997-fa72c0f67b5e)
