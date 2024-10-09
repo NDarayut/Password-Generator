@@ -28,7 +28,7 @@ and allows users to select the types of characters (Alphabets, Numbers, Symbols)
 5. Click the "Copy" button to copy the generated password to the clipboard.  
 6. Paste the copied password wherever necessary.
 ## Window Application  
-User can run the application in their machine with the executable program provided in [dist folder]()
+If user does not want to install the code and dependencies mentioned above, they can run the application in their machine locally with the executable program provided in [dist folder](https://github.com/NDarayut/Password-Generator/tree/organized-file/dist).
 ## Demo  
 
 ![Demo](https://github.com/user-attachments/assets/db67047f-a869-47ac-8997-fa72c0f67b5e)
