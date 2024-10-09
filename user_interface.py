@@ -40,8 +40,6 @@ def submit():
     """
     select_letters, select_numbers, select_symbols = checkbox_change() # Stores checkbox boolean into a variable
     password_length = length_var.get() # Get length from tkinter object
-    print(password_length)
-    print(type(password_length))
 
     if password_length < 8 or password_length > 50:
         messagebox.showerror("Input Error", "Length out of range. Must be within 8-50")
